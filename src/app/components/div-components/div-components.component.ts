@@ -29,7 +29,8 @@ export class DivComponentsComponent implements OnInit {
   }
 
   chamarFunc(): void {
-    if (this.desafio.func && this.inputValues.length > 0 && this.inputValues[0] > 0) {
+    if (this.desafio.func && this.inputValues.length == this.inputs.length && this.inputValues.every((currentValue) => currentValue > 0) && this.inputValues.every((currentValue) => currentValue != null)) {
+      console.log(this.inputValues)
       this.result = this.desafio.func(this.inputValues)
     } else {
       Swal.fire({
