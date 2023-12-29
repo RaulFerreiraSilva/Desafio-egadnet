@@ -1,0 +1,15 @@
+<section>
+    <h3><span *ngIf="!mostrar"></span> <span *ngIf="mostrar" (click)="mostrarDesafio()"><-</span> {{titleDesafio}}° </h3>
+    <p *ngIf="!mostrar">{{textDesafio}}</p>
+    <button (click)="mostrarDesafio()" *ngIf="!mostrar">Mostrar Desafio</button>
+    <span class="mostrar" *ngIf="mostrar">
+        <div class="container">
+            <p *ngIf="titleDesafio == 8">Primeiro Array</p>
+            <p *ngIf="titleDesafio == 8">Segundo Array</p>
+            <input *ngFor="let inputDesafio of inputs; let i = index;" [(ngModel)]="inputValues[i]" placeholder="Digite um numero:" type="number">
+        </div>
+        <button (click)="chamarFunc()">Calcular</button>
+        <h4 *ngIf="result">Resultado: </h4>
+        <h5>{{result}}</h5>
+    </span>
+</section>

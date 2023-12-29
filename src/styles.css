@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62, 5%;
+}
+
+:root {
+    --colorPrimary: #233070;
+    --colorSecond: #f06d2b;
+    --colorFont: #fbfbfb;
+    --widthCard: 300px;
+
+    @media (max-width: 320px) {
+        --widthCard: 240px;
+    }
+}
+
+body {
+    background: #fbfbfb;
+}
