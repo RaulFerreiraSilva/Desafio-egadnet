@@ -1,4 +1,4 @@
-section {
+:host {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -14,7 +14,7 @@ section {
     padding: 12px;
 }
 
-section p {
+:host p {
     max-height: 92px;
     overflow-y: auto;
     padding-inline: 10px;

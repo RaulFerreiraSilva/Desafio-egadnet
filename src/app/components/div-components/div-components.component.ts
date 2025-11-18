@@ -18,10 +18,6 @@ export class DivComponentsComponent implements OnInit {
   inputs: Array<Number> = new Array()
   mostrar: boolean = false;
 
-  constructor() {
-
-  }
-
   ngOnInit(): void {
     this.titleDesafio = this.desafio.desafio;
     this.textDesafio = this.desafio.enunciado;
@@ -30,7 +26,6 @@ export class DivComponentsComponent implements OnInit {
 
   chamarFunc(): void {
     if (this.desafio.func && this.inputValues.length == this.inputs.length && this.inputValues.every((currentValue) => currentValue > 0) && this.inputValues.every((currentValue) => currentValue != null)) {
-      console.log(this.inputValues)
       this.result = this.desafio.func(this.inputValues)
     } else {
       Swal.fire({
