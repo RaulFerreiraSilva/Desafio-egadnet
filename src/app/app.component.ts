@@ -35,7 +35,7 @@ export class AppComponent {
     func: (numeros: Array<number>) => {
       console.log(numeros)
       let arrayOrdenado = [...numeros]
-      return arrayOrdenado.sort((a: number, b: number) => a - b)
+      return arrayOrdenado.sort((a: number, b: number) => b - a)
     }
   }, {
     desafio: 4,
