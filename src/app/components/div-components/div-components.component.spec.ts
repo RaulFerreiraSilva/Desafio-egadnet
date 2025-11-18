@@ -16,6 +16,14 @@ describe('DivComponentsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(DivComponentsComponent);
     component = fixture.componentInstance;
+    
+    // Mock dos dados necessários para o componente
+    component.desafio = {
+      desafio: 'Teste',
+      enunciado: 'Enunciado de teste',
+      inputs: 2
+    };
+    
     fixture.detectChanges();
   });
 
