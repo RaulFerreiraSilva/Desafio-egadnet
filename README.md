@@ -1,6 +1,6 @@
 # egadnet | Desafio
 
-Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## Servidor de desenvolvimento
 
